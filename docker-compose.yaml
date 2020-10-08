@@ -7,5 +7,5 @@ services:
         volumes:
         - ./default.conf:/etc/nginx/conf.d/default.conf
     wazo-auth:
-        image: 'wazopbx/wazo-auth-mock'
+        image: 'wazoplatform/wazo-auth-mock'
         command: ["/usr/local/bin/wazo-auth-mock.py", "9497", "/api/auth"]
